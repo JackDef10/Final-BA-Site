@@ -321,7 +321,6 @@ label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  color:white;
 }
 .w-input,
 .w-select {
@@ -1831,7 +1830,6 @@ textarea.w-select {
 .wf-layout-cell {
   display: flex !important;
 }
-
 /* ---------------------------------- page switcher -----------------------------------------*/
 .page{
   display:block;
