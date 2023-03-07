@@ -93,6 +93,18 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports) {
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+
+module.exports = _interopRequireDefault;
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var check = function (it) {
@@ -111,18 +123,6 @@ module.exports =
   (function () { return this; })() || Function('return this')();
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(25)))
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
-}
-
-module.exports = _interopRequireDefault;
 
 /***/ }),
 /* 2 */
@@ -1738,7 +1738,7 @@ module.exports = function (it) {
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var isCallable = __webpack_require__(7);
 
 var aFunction = function (argument) {
@@ -1754,7 +1754,7 @@ module.exports = function (namespace, method) {
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var DESCRIPTORS = __webpack_require__(14);
 var IE8_DOM_DEFINE = __webpack_require__(80);
 var anObject = __webpack_require__(29);
@@ -1783,7 +1783,7 @@ exports.f = DESCRIPTORS ? $defineProperty : function defineProperty(O, P, Attrib
 /* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var isObject = __webpack_require__(20);
 
 var String = global.String;
@@ -2132,7 +2132,7 @@ module.exports = call.bind ? call.bind(call) : function () {
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var setGlobal = __webpack_require__(42);
 
 var SHARED = '__core-js_shared__';
@@ -2145,7 +2145,7 @@ module.exports = store;
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 
 // eslint-disable-next-line es/no-object-defineproperty -- safe
 var defineProperty = Object.defineProperty;
@@ -2506,7 +2506,7 @@ function compose() {
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -3186,7 +3186,7 @@ module.exports = toNumber;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -3563,7 +3563,7 @@ module.exports = LazyWrapper;
 
 /* prettier-ignore */
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 var _typeof2 = _interopRequireDefault(__webpack_require__(13));
 
@@ -4477,7 +4477,7 @@ module.exports = function (bitmap, value) {
 /* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 
 var TypeError = global.TypeError;
 
@@ -4508,7 +4508,7 @@ module.exports = function (argument) {
 /* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var getBuiltIn = __webpack_require__(27);
 var isCallable = __webpack_require__(7);
 var isPrototypeOf = __webpack_require__(149);
@@ -4559,7 +4559,7 @@ module.exports = !!Object.getOwnPropertySymbols && !fails(function () {
 /* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var shared = __webpack_require__(78);
 var hasOwn = __webpack_require__(9);
 var uid = __webpack_require__(79);
@@ -4637,7 +4637,7 @@ module.exports = !DESCRIPTORS && !fails(function () {
 /* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var isObject = __webpack_require__(20);
 
 var document = global.document;
@@ -5179,6 +5179,7 @@ var ActionTypeConsts = {
   STYLE_OPACITY: 'STYLE_OPACITY',
   STYLE_SIZE: 'STYLE_SIZE',
   STYLE_FILTER: 'STYLE_FILTER',
+  STYLE_FONT_VARIATION: 'STYLE_FONT_VARIATION',
   STYLE_BACKGROUND_COLOR: 'STYLE_BACKGROUND_COLOR',
   STYLE_BORDER: 'STYLE_BORDER',
   STYLE_TEXT_COLOR: 'STYLE_TEXT_COLOR',
@@ -5903,7 +5904,7 @@ module.exports = toInteger;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -6347,11 +6348,11 @@ module.exports = function bezier (mX1, mY1, mX2, mY2) {
 "use strict";
 
 
-var _interopRequireDefault2 = __webpack_require__(1);
+var _interopRequireDefault2 = __webpack_require__(0);
 
 var _toConsumableArray2 = _interopRequireDefault2(__webpack_require__(119));
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 var _interopRequireWildcard = __webpack_require__(18);
 
@@ -6419,7 +6420,7 @@ module.exports = _toConsumableArray;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(21));
 
@@ -6539,13 +6540,13 @@ module.exports = baseForOwn;
 "use strict";
 
 
-var _interopRequireDefault2 = __webpack_require__(1);
+var _interopRequireDefault2 = __webpack_require__(0);
 
 var _toConsumableArray2 = _interopRequireDefault2(__webpack_require__(119));
 
 var _interopRequireWildcard = __webpack_require__(18);
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -7859,7 +7860,8 @@ __webpack_require__(333);
 __webpack_require__(334);
 __webpack_require__(335);
 __webpack_require__(336);
-module.exports = __webpack_require__(337);
+__webpack_require__(341);
+module.exports = __webpack_require__(342);
 
 
 /***/ }),
@@ -7886,7 +7888,7 @@ module.exports = __webpack_require__(337);
  * https://github.com/constancecchen/object-fit-polyfill
  *--------------------------------------*/
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 var _typeof2 = _interopRequireDefault(__webpack_require__(13));
 
@@ -8287,6 +8289,7 @@ var tram = __webpack_require__(69) && $.tram;
  * _.keys
  * _.has
  * _.now
+ * _.template (webflow: upgraded to 1.13.6)
  *
  * http://underscorejs.org
  * (c) 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -8572,15 +8575,21 @@ module.exports = function () {
     "\u2028": 'u2028',
     "\u2029": 'u2029'
   };
-  var escaper = /\\|'|\r|\n|\u2028|\u2029/g;
+  var escapeRegExp = /\\|'|\r|\n|\u2028|\u2029/g;
 
   var escapeChar = function escapeChar(match) {
     return '\\' + escapes[match];
-  }; // JavaScript micro-templating, similar to John Resig's implementation.
+  }; // In order to prevent third-party code injection through
+  // `_.templateSettings.variable`, we test it against the following regular
+  // expression. It is intentionally a bit more liberal than just matching valid
+  // identifiers, but still prevents possible loopholes through defaults or
+  // destructuring assignment.
+
+
+  var bareIdentifier = /^\s*(\w|\$)+\s*$/; // JavaScript micro-templating, similar to John Resig's implementation.
   // Underscore templating handles arbitrary delimiters, preserves whitespace,
   // and correctly escapes quotes within interpolated code.
   // NB: `oldSettings` only exists for backwards compatibility.
-
 
   _.template = function (text, settings, oldSettings) {
     if (!settings && oldSettings) settings = oldSettings;
@@ -8591,7 +8600,7 @@ module.exports = function () {
     var index = 0;
     var source = "__p+='";
     text.replace(matcher, function (match, escape, interpolate, evaluate, offset) {
-      source += text.slice(index, offset).replace(escaper, escapeChar);
+      source += text.slice(index, offset).replace(escapeRegExp, escapeChar);
       index = offset + match.length;
 
       if (escape) {
@@ -8600,19 +8609,29 @@ module.exports = function () {
         source += "'+\n((__t=(" + interpolate + "))==null?'':__t)+\n'";
       } else if (evaluate) {
         source += "';\n" + evaluate + "\n__p+='";
-      } // Adobe VMs need the match returned to produce the correct offest.
+      } // Adobe VMs need the match returned to produce the correct offset.
 
 
       return match;
     });
-    source += "';\n"; // If a variable is not specified, place data values in local scope.
+    source += "';\n";
+    var argument = settings.variable;
 
-    if (!settings.variable) source = 'with(obj||{}){\n' + source + '}\n';
+    if (argument) {
+      // Insure against third-party code injection. (CVE-2021-23358)
+      if (!bareIdentifier.test(argument)) throw new Error('variable is not a bare identifier: ' + argument);
+    } else {
+      // If a variable is not specified, place data values in local scope.
+      source = 'with(obj||{}){\n' + source + '}\n';
+      argument = 'obj';
+    }
+
     source = "var __t,__p='',__j=Array.prototype.join," + "print=function(){__p+=__j.call(arguments,'');};\n" + source + 'return __p;\n';
+    var render;
 
     try {
       // eslint-disable-next-line no-new-func
-      var render = new Function(settings.variable || 'obj', '_', source);
+      render = new Function(settings.variable || 'obj', '_', source);
     } catch (e) {
       e.source = source;
       throw e;
@@ -8623,7 +8642,6 @@ module.exports = function () {
     }; // Provide the compiled source as a convenience for precompilation.
 
 
-    var argument = settings.variable || 'obj';
     template.source = 'function(' + argument + '){\n' + source + '}';
     return template;
   }; // Export underscore
@@ -9247,7 +9265,7 @@ Webflow.define('ix2', module.exports = function () {
 
 var _interopRequireWildcard = __webpack_require__(18);
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -9345,7 +9363,7 @@ addToUnscopables('includes');
 /* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var getOwnPropertyDescriptor = __webpack_require__(70).f;
 var createNonEnumerableProperty = __webpack_require__(43);
 var redefine = __webpack_require__(158);
@@ -9427,7 +9445,7 @@ exports.f = NASHORN_BUG ? function propertyIsEnumerable(V) {
 /* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var uncurryThis = __webpack_require__(5);
 var fails = __webpack_require__(19);
 var classof = __webpack_require__(147);
@@ -9463,7 +9481,7 @@ module.exports = function (it) {
 /* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var call = __webpack_require__(40);
 var isObject = __webpack_require__(20);
 var isSymbol = __webpack_require__(74);
@@ -9504,7 +9522,7 @@ module.exports = uncurryThis({}.isPrototypeOf);
 /* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var userAgent = __webpack_require__(151);
 
 var process = global.process;
@@ -9560,7 +9578,7 @@ module.exports = function (V, P) {
 /* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var isCallable = __webpack_require__(7);
 var tryToString = __webpack_require__(154);
 
@@ -9577,7 +9595,7 @@ module.exports = function (argument) {
 /* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 
 var String = global.String;
 
@@ -9594,7 +9612,7 @@ module.exports = function (argument) {
 /* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var call = __webpack_require__(40);
 var isCallable = __webpack_require__(7);
 var isObject = __webpack_require__(20);
@@ -9623,7 +9641,7 @@ module.exports = false;
 /* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var requireObjectCoercible = __webpack_require__(72);
 
 var Object = global.Object;
@@ -9639,7 +9657,7 @@ module.exports = function (argument) {
 /* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var isCallable = __webpack_require__(7);
 var hasOwn = __webpack_require__(9);
 var createNonEnumerableProperty = __webpack_require__(43);
@@ -9692,7 +9710,7 @@ var TEMPLATE = String(String).split('String');
 /***/ (function(module, exports, __webpack_require__) {
 
 var NATIVE_WEAK_MAP = __webpack_require__(160);
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var uncurryThis = __webpack_require__(5);
 var isObject = __webpack_require__(20);
 var createNonEnumerableProperty = __webpack_require__(43);
@@ -9766,7 +9784,7 @@ module.exports = {
 /* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var isCallable = __webpack_require__(7);
 var inspectSource = __webpack_require__(82);
 
@@ -10104,7 +10122,7 @@ module.exports = getBuiltIn('document', 'documentElement');
 /* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(0);
+var global = __webpack_require__(1);
 var uncurryThis = __webpack_require__(5);
 
 module.exports = function (CONSTRUCTOR, METHOD) {
@@ -10650,7 +10668,7 @@ exports.InteractionTypeConsts = InteractionTypeConsts;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(21));
 
@@ -10669,12 +10687,13 @@ var _animationActions$Act = _animationActions.ActionTypeConsts,
     TRANSFORM_ROTATE = _animationActions$Act.TRANSFORM_ROTATE,
     TRANSFORM_SKEW = _animationActions$Act.TRANSFORM_SKEW,
     STYLE_SIZE = _animationActions$Act.STYLE_SIZE,
-    STYLE_FILTER = _animationActions$Act.STYLE_FILTER;
+    STYLE_FILTER = _animationActions$Act.STYLE_FILTER,
+    STYLE_FONT_VARIATION = _animationActions$Act.STYLE_FONT_VARIATION;
 /**
  * Reduced Motion: Action types to bypass during `prefers-reduced-motion`
  */
 
-var ReducedMotionTypes = (_ReducedMotionTypes = {}, (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_MOVE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_SCALE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_ROTATE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_SKEW, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, STYLE_SIZE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, STYLE_FILTER, true), _ReducedMotionTypes);
+var ReducedMotionTypes = (_ReducedMotionTypes = {}, (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_MOVE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_SCALE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_ROTATE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, TRANSFORM_SKEW, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, STYLE_SIZE, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, STYLE_FILTER, true), (0, _defineProperty2["default"])(_ReducedMotionTypes, STYLE_FONT_VARIATION, true), _ReducedMotionTypes);
 exports.ReducedMotionTypes = ReducedMotionTypes;
 
 /***/ }),
@@ -10739,7 +10758,7 @@ exports.IX2_TEST_FRAME_RENDERED = IX2_TEST_FRAME_RENDERED;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.RENDER_PLUGIN = exports.RENDER_STYLE = exports.RENDER_GENERAL = exports.RENDER_TRANSFORM = exports.ABSTRACT_NODE = exports.PLAIN_OBJECT = exports.HTML_ELEMENT = exports.PRESERVE_3D = exports.PARENT = exports.SIBLINGS = exports.IMMEDIATE_CHILDREN = exports.CHILDREN = exports.BAR_DELIMITER = exports.COLON_DELIMITER = exports.COMMA_DELIMITER = exports.AUTO = exports.WILL_CHANGE = exports.FLEX = exports.DISPLAY = exports.COLOR = exports.BORDER_COLOR = exports.BACKGROUND = exports.BACKGROUND_COLOR = exports.HEIGHT = exports.WIDTH = exports.FILTER = exports.OPACITY = exports.SKEW_Y = exports.SKEW_X = exports.SKEW = exports.ROTATE_Z = exports.ROTATE_Y = exports.ROTATE_X = exports.SCALE_3D = exports.SCALE_Z = exports.SCALE_Y = exports.SCALE_X = exports.TRANSLATE_3D = exports.TRANSLATE_Z = exports.TRANSLATE_Y = exports.TRANSLATE_X = exports.TRANSFORM = exports.CONFIG_UNIT = exports.CONFIG_Z_UNIT = exports.CONFIG_Y_UNIT = exports.CONFIG_X_UNIT = exports.CONFIG_VALUE = exports.CONFIG_Z_VALUE = exports.CONFIG_Y_VALUE = exports.CONFIG_X_VALUE = exports.BOUNDARY_SELECTOR = exports.W_MOD_IX = exports.W_MOD_JS = exports.WF_PAGE = exports.IX2_ID_DELIMITER = void 0;
+exports.RENDER_PLUGIN = exports.RENDER_STYLE = exports.RENDER_GENERAL = exports.RENDER_TRANSFORM = exports.ABSTRACT_NODE = exports.PLAIN_OBJECT = exports.HTML_ELEMENT = exports.PRESERVE_3D = exports.PARENT = exports.SIBLINGS = exports.IMMEDIATE_CHILDREN = exports.CHILDREN = exports.BAR_DELIMITER = exports.COLON_DELIMITER = exports.COMMA_DELIMITER = exports.AUTO = exports.WILL_CHANGE = exports.FLEX = exports.DISPLAY = exports.COLOR = exports.BORDER_COLOR = exports.BACKGROUND = exports.BACKGROUND_COLOR = exports.HEIGHT = exports.WIDTH = exports.FONT_VARIATION_SETTINGS = exports.FILTER = exports.OPACITY = exports.SKEW_Y = exports.SKEW_X = exports.SKEW = exports.ROTATE_Z = exports.ROTATE_Y = exports.ROTATE_X = exports.SCALE_3D = exports.SCALE_Z = exports.SCALE_Y = exports.SCALE_X = exports.TRANSLATE_3D = exports.TRANSLATE_Z = exports.TRANSLATE_Y = exports.TRANSLATE_X = exports.TRANSFORM = exports.CONFIG_UNIT = exports.CONFIG_Z_UNIT = exports.CONFIG_Y_UNIT = exports.CONFIG_X_UNIT = exports.CONFIG_VALUE = exports.CONFIG_Z_VALUE = exports.CONFIG_Y_VALUE = exports.CONFIG_X_VALUE = exports.BOUNDARY_SELECTOR = exports.W_MOD_IX = exports.W_MOD_JS = exports.WF_PAGE = exports.IX2_ID_DELIMITER = void 0;
 var IX2_ID_DELIMITER = '|';
 exports.IX2_ID_DELIMITER = IX2_ID_DELIMITER;
 var WF_PAGE = 'data-wf-page';
@@ -10800,6 +10819,8 @@ var OPACITY = 'opacity';
 exports.OPACITY = OPACITY;
 var FILTER = 'filter';
 exports.FILTER = FILTER;
+var FONT_VARIATION_SETTINGS = 'font-variation-settings';
+exports.FONT_VARIATION_SETTINGS = FONT_VARIATION_SETTINGS;
 var WIDTH = 'width';
 exports.WIDTH = WIDTH;
 var HEIGHT = 'height';
@@ -10858,13 +10879,13 @@ exports.RENDER_PLUGIN = RENDER_PLUGIN;
 "use strict";
 
 
-var _interopRequireDefault2 = __webpack_require__(1);
+var _interopRequireDefault2 = __webpack_require__(0);
 
 var _defineProperty2 = _interopRequireDefault2(__webpack_require__(21));
 
 var _Object$create;
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -13578,7 +13599,7 @@ exports.clearPlugin = clearPlugin;
 "use strict";
 
 
-var _interopRequireDefault2 = __webpack_require__(1);
+var _interopRequireDefault2 = __webpack_require__(0);
 
 var _typeof2 = _interopRequireDefault2(__webpack_require__(13));
 
@@ -13586,7 +13607,7 @@ var _defineProperty2 = _interopRequireDefault2(__webpack_require__(21));
 
 var _Object$freeze, _Object$freeze2, _transformDefaults;
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -13653,6 +13674,7 @@ var _constants$IX2EngineC = _constants.IX2EngineConstants,
     FLEX = _constants$IX2EngineC.FLEX,
     OPACITY = _constants$IX2EngineC.OPACITY,
     FILTER = _constants$IX2EngineC.FILTER,
+    FONT_VARIATION_SETTINGS = _constants$IX2EngineC.FONT_VARIATION_SETTINGS,
     WIDTH = _constants$IX2EngineC.WIDTH,
     HEIGHT = _constants$IX2EngineC.HEIGHT,
     BACKGROUND_COLOR = _constants$IX2EngineC.BACKGROUND_COLOR,
@@ -13679,6 +13701,7 @@ var _constants$ActionType = _constants.ActionTypeConsts,
     TRANSFORM_SKEW = _constants$ActionType.TRANSFORM_SKEW,
     STYLE_OPACITY = _constants$ActionType.STYLE_OPACITY,
     STYLE_FILTER = _constants$ActionType.STYLE_FILTER,
+    STYLE_FONT_VARIATION = _constants$ActionType.STYLE_FONT_VARIATION,
     STYLE_SIZE = _constants$ActionType.STYLE_SIZE,
     STYLE_BACKGROUND_COLOR = _constants$ActionType.STYLE_BACKGROUND_COLOR,
     STYLE_BORDER = _constants$ActionType.STYLE_BORDER,
@@ -13691,7 +13714,7 @@ var trim = function trim(v) {
 };
 
 var colorStyleProps = Object.freeze((_Object$freeze = {}, (0, _defineProperty2["default"])(_Object$freeze, STYLE_BACKGROUND_COLOR, BACKGROUND_COLOR), (0, _defineProperty2["default"])(_Object$freeze, STYLE_BORDER, BORDER_COLOR), (0, _defineProperty2["default"])(_Object$freeze, STYLE_TEXT_COLOR, COLOR), _Object$freeze));
-var willChangeProps = Object.freeze((_Object$freeze2 = {}, (0, _defineProperty2["default"])(_Object$freeze2, _IX2BrowserSupport.TRANSFORM_PREFIXED, TRANSFORM), (0, _defineProperty2["default"])(_Object$freeze2, BACKGROUND_COLOR, BACKGROUND), (0, _defineProperty2["default"])(_Object$freeze2, OPACITY, OPACITY), (0, _defineProperty2["default"])(_Object$freeze2, FILTER, FILTER), (0, _defineProperty2["default"])(_Object$freeze2, WIDTH, WIDTH), (0, _defineProperty2["default"])(_Object$freeze2, HEIGHT, HEIGHT), _Object$freeze2));
+var willChangeProps = Object.freeze((_Object$freeze2 = {}, (0, _defineProperty2["default"])(_Object$freeze2, _IX2BrowserSupport.TRANSFORM_PREFIXED, TRANSFORM), (0, _defineProperty2["default"])(_Object$freeze2, BACKGROUND_COLOR, BACKGROUND), (0, _defineProperty2["default"])(_Object$freeze2, OPACITY, OPACITY), (0, _defineProperty2["default"])(_Object$freeze2, FILTER, FILTER), (0, _defineProperty2["default"])(_Object$freeze2, WIDTH, WIDTH), (0, _defineProperty2["default"])(_Object$freeze2, HEIGHT, HEIGHT), (0, _defineProperty2["default"])(_Object$freeze2, FONT_VARIATION_SETTINGS, FONT_VARIATION_SETTINGS), _Object$freeze2));
 var objectCache = {};
 var instanceCount = 1;
 
@@ -13980,39 +14003,54 @@ var pxValueRegex = /px/;
 var getFilterDefaults = function getFilterDefaults(actionState, filters) {
   return filters.reduce(function (result, filter) {
     if (result[filter.type] == null) {
-      result[filter.type] = filterDefaults[filter.type];
+      result[filter.type] = filterDefaults[// $FlowFixMe - property `saturation` (did you mean `saturate`?) is missing in `filterDefaults`
+      filter.type];
     }
 
     return result;
   }, actionState || {});
 };
 
-function getInstanceOrigin( // $FlowFixMe
-element) {
+var getFontVariationDefaults = function getFontVariationDefaults(actionState, fontVariations) {
+  return fontVariations.reduce(function (result, fontVariation) {
+    if (result[fontVariation.type] == null) {
+      result[fontVariation.type] = fontVariationDefaults[fontVariation.type] || fontVariation.defaultValue || 0;
+    }
+
+    return result;
+  }, actionState || {});
+};
+
+function getInstanceOrigin(element) {
   var refState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
   var computedStyle = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-  var // $FlowFixMe
-  actionItem = arguments.length > 3 ? arguments[3] : undefined;
-  var // $FlowFixMe
-  elementApi = arguments.length > 4 ? arguments[4] : undefined;
-  var getStyle = elementApi.getStyle;
-  var actionTypeId = actionItem.actionTypeId,
-      config = actionItem.config;
+  var actionItem = arguments.length > 3 ? arguments[3] : undefined;
+  var elementApi = arguments.length > 4 ? arguments[4] : undefined;
+  var getStyle = elementApi.getStyle; // Flow Hack: Passing actionTypeId to isPluginType and then trying
+  // to do type refinement using the same variable via a switch statement
+  // breaks down. This is is a workaround to ensure we can use type refinement.
+
+  var actionTypeId = actionItem.actionTypeId;
 
   if ((0, _IX2VanillaPlugins.isPluginType)(actionTypeId)) {
     // $FlowFixMe
     return (0, _IX2VanillaPlugins.getPluginOrigin)(actionTypeId)(refState[actionTypeId]);
   }
 
-  switch (actionTypeId) {
+  switch (actionItem.actionTypeId) {
     case TRANSFORM_MOVE:
     case TRANSFORM_SCALE:
     case TRANSFORM_ROTATE:
     case TRANSFORM_SKEW:
-      return refState[actionTypeId] || transformDefaults[actionTypeId];
+      {
+        return refState[actionItem.actionTypeId] || transformDefaults[actionItem.actionTypeId];
+      }
 
     case STYLE_FILTER:
-      return getFilterDefaults(refState[actionTypeId], actionItem.config.filters);
+      return getFilterDefaults(refState[actionItem.actionTypeId], actionItem.config.filters);
+
+    case STYLE_FONT_VARIATION:
+      return getFontVariationDefaults(refState[actionItem.actionTypeId], actionItem.config.fontVariations);
 
     case STYLE_OPACITY:
       return {
@@ -14026,13 +14064,13 @@ element) {
         var widthValue;
         var heightValue; // When destination unit is 'AUTO', ensure origin values are in px
 
-        if (config.widthUnit === AUTO) {
+        if (actionItem.config.widthUnit === AUTO) {
           widthValue = pxValueRegex.test(inlineWidth) ? parseFloat(inlineWidth) : parseFloat(computedStyle.width);
         } else {
           widthValue = (0, _defaultTo["default"])(parseFloat(inlineWidth), parseFloat(computedStyle.width));
         }
 
-        if (config.heightUnit === AUTO) {
+        if (actionItem.config.heightUnit === AUTO) {
           heightValue = pxValueRegex.test(inlineHeight) ? parseFloat(inlineHeight) : parseFloat(computedStyle.height);
         } else {
           heightValue = (0, _defaultTo["default"])(parseFloat(inlineHeight), parseFloat(computedStyle.height));
@@ -14049,7 +14087,7 @@ element) {
     case STYLE_TEXT_COLOR:
       return parseColor({
         element: element,
-        actionTypeId: actionTypeId,
+        actionTypeId: actionItem.actionTypeId,
         computedStyle: computedStyle,
         getStyle: getStyle
       });
@@ -14058,20 +14096,39 @@ element) {
       return {
         value: (0, _defaultTo["default"])(getStyle(element, DISPLAY), computedStyle.display)
       };
+    // $FlowFixMe - `OBJECT_VALUE` is not an expected `actionTypeId`
 
     case OBJECT_VALUE:
-      return refState[actionTypeId] || {
+      return refState[actionItem.actionTypeId] || {
         value: 0
       };
 
     default:
-      return;
+      {
+        // As far as the type system can tell, we're missing a handler for
+        // PLUGIN_LOTTIE.
+        //
+        // This is actually handled by `isPluginType` above.
+        //
+        // $FlowFixMe
+
+        /*:: (actionItem: empty); */
+        return;
+      }
   }
 }
 
 var reduceFilters = function reduceFilters(result, filter) {
   if (filter) {
     result[filter.type] = filter.value || 0;
+  }
+
+  return result;
+};
+
+var reduceFontVariations = function reduceFontVariations(result, fontVariation) {
+  if (fontVariation) {
+    result[fontVariation.type] = fontVariation.value || 0;
   }
 
   return result;
@@ -14094,26 +14151,33 @@ var getItemConfigByKey = function getItemConfigByKey(actionTypeId, key, config) 
         return filter ? filter.value : 0;
       }
 
+    case STYLE_FONT_VARIATION:
+      {
+        var fontVariation = (0, _findLast["default"])(config.fontVariations, function (_ref7) {
+          var type = _ref7.type;
+          return type === key;
+        });
+        return fontVariation ? fontVariation.value : 0;
+      }
+
     default:
       return config[key];
   }
-}; // $FlowFixMe
-
+};
 
 exports.getItemConfigByKey = getItemConfigByKey;
 
-function getDestinationValues(_ref7) {
-  var element = _ref7.element,
-      actionItem = _ref7.actionItem,
-      elementApi = _ref7.elementApi;
-  var actionTypeId = actionItem.actionTypeId;
+function getDestinationValues(_ref8) {
+  var element = _ref8.element,
+      actionItem = _ref8.actionItem,
+      elementApi = _ref8.elementApi;
 
-  if ((0, _IX2VanillaPlugins.isPluginType)(actionTypeId)) {
+  if ((0, _IX2VanillaPlugins.isPluginType)(actionItem.actionTypeId)) {
     // $FlowFixMe
-    return (0, _IX2VanillaPlugins.getPluginDestination)(actionTypeId)(actionItem.config);
+    return (0, _IX2VanillaPlugins.getPluginDestination)(actionItem.actionTypeId)(actionItem.config);
   }
 
-  switch (actionTypeId) {
+  switch (actionItem.actionTypeId) {
     case TRANSFORM_MOVE:
     case TRANSFORM_SCALE:
     case TRANSFORM_ROTATE:
@@ -14190,6 +14254,11 @@ function getDestinationValues(_ref7) {
     case STYLE_FILTER:
       {
         return actionItem.config.filters.reduce(reduceFilters, {});
+      }
+
+    case STYLE_FONT_VARIATION:
+      {
+        return actionItem.config.fontVariations.reduce(reduceFontVariations, {});
       }
 
     default:
@@ -14290,10 +14359,16 @@ var filterDefaults = Object.freeze({
   contrast: 100,
   brightness: 100
 });
+var fontVariationDefaults = Object.freeze({
+  wght: 0,
+  opsz: 0,
+  wdth: 0,
+  slnt: 0
+});
 
 var getFilterUnit = function getFilterUnit(filterType, actionItemConfig) {
-  var filter = (0, _findLast["default"])(actionItemConfig.filters, function (_ref8) {
-    var type = _ref8.type;
+  var filter = (0, _findLast["default"])(actionItemConfig.filters, function (_ref9) {
+    var type = _ref9.type;
     return type === filterType;
   });
 
@@ -14319,19 +14394,19 @@ function renderTransform(element, refState, actionState, actionItem, elementApi)
   var newTransform = transformKeys.map(function (actionTypeId) {
     var defaults = transformDefaults[actionTypeId];
 
-    var _ref9 = refState[actionTypeId] || {},
-        _ref9$xValue = _ref9.xValue,
-        xValue = _ref9$xValue === void 0 ? defaults.xValue : _ref9$xValue,
-        _ref9$yValue = _ref9.yValue,
-        yValue = _ref9$yValue === void 0 ? defaults.yValue : _ref9$yValue,
-        _ref9$zValue = _ref9.zValue,
-        zValue = _ref9$zValue === void 0 ? defaults.zValue : _ref9$zValue,
-        _ref9$xUnit = _ref9.xUnit,
-        xUnit = _ref9$xUnit === void 0 ? '' : _ref9$xUnit,
-        _ref9$yUnit = _ref9.yUnit,
-        yUnit = _ref9$yUnit === void 0 ? '' : _ref9$yUnit,
-        _ref9$zUnit = _ref9.zUnit,
-        zUnit = _ref9$zUnit === void 0 ? '' : _ref9$zUnit;
+    var _ref10 = refState[actionTypeId] || {},
+        _ref10$xValue = _ref10.xValue,
+        xValue = _ref10$xValue === void 0 ? defaults.xValue : _ref10$xValue,
+        _ref10$yValue = _ref10.yValue,
+        yValue = _ref10$yValue === void 0 ? defaults.yValue : _ref10$yValue,
+        _ref10$zValue = _ref10.zValue,
+        zValue = _ref10$zValue === void 0 ? defaults.zValue : _ref10$zValue,
+        _ref10$xUnit = _ref10.xUnit,
+        xUnit = _ref10$xUnit === void 0 ? '' : _ref10$xUnit,
+        _ref10$yUnit = _ref10.yUnit,
+        yUnit = _ref10$yUnit === void 0 ? '' : _ref10$yUnit,
+        _ref10$zUnit = _ref10.zUnit,
+        zUnit = _ref10$zUnit === void 0 ? '' : _ref10$zUnit;
 
     switch (actionTypeId) {
       case TRANSFORM_MOVE:
@@ -14368,11 +14443,21 @@ function renderFilter(element, actionState, actionItemConfig, elementApi) {
   setStyle(element, FILTER, filterValue);
 }
 
-function hasDefined3dTransform(_ref10, _ref11) {
-  var actionTypeId = _ref10.actionTypeId;
-  var xValue = _ref11.xValue,
-      yValue = _ref11.yValue,
-      zValue = _ref11.zValue;
+function renderFontVariation(element, actionState, actionItemConfig, elementApi) {
+  var fontVariationValue = (0, _reduce["default"])(actionState, function (result, value, type) {
+    result.push("\"".concat(type, "\" ").concat(value));
+    return result;
+  }, []).join(', ');
+  var setStyle = elementApi.setStyle;
+  addWillChange(element, FONT_VARIATION_SETTINGS, elementApi);
+  setStyle(element, FONT_VARIATION_SETTINGS, fontVariationValue);
+}
+
+function hasDefined3dTransform(_ref11, _ref12) {
+  var actionTypeId = _ref11.actionTypeId;
+  var xValue = _ref12.xValue,
+      yValue = _ref12.yValue,
+      zValue = _ref12.zValue;
   // TRANSLATE_Z
   return actionTypeId === TRANSFORM_MOVE && zValue !== undefined || // SCALE_Z
   actionTypeId === TRANSFORM_SCALE && zValue !== undefined || // ROTATE_X or ROTATE_Y
@@ -14388,11 +14473,11 @@ function getFirstMatch(regex, value) {
   return match ? match[1] : '';
 }
 
-function parseColor(_ref12) {
-  var element = _ref12.element,
-      actionTypeId = _ref12.actionTypeId,
-      computedStyle = _ref12.computedStyle,
-      getStyle = _ref12.getStyle;
+function parseColor(_ref13) {
+  var element = _ref13.element,
+      actionTypeId = _ref13.actionTypeId,
+      computedStyle = _ref13.computedStyle,
+      getStyle = _ref13.getStyle;
   var prop = colorStyleProps[actionTypeId];
   var inlineValue = getStyle(element, prop);
   var value = rgbValidRegex.test(inlineValue) ? inlineValue : computedStyle[prop];
@@ -14407,10 +14492,8 @@ function parseColor(_ref12) {
 
 function renderStyle(element, refState, actionState, actionItem, styleProp, elementApi) {
   var setStyle = elementApi.setStyle;
-  var actionTypeId = actionItem.actionTypeId,
-      config = actionItem.config;
 
-  switch (actionTypeId) {
+  switch (actionItem.actionTypeId) {
     case STYLE_SIZE:
       {
         var _actionItem$config5 = actionItem.config,
@@ -14444,7 +14527,13 @@ function renderStyle(element, refState, actionState, actionItem, styleProp, elem
 
     case STYLE_FILTER:
       {
-        renderFilter(element, actionState, config, elementApi);
+        renderFilter(element, actionState, actionItem.config, elementApi);
+        break;
+      }
+
+    case STYLE_FONT_VARIATION:
+      {
+        renderFontVariation(element, actionState, actionItem.config, elementApi);
         break;
       }
 
@@ -14452,7 +14541,7 @@ function renderStyle(element, refState, actionState, actionItem, styleProp, elem
     case STYLE_BORDER:
     case STYLE_TEXT_COLOR:
       {
-        var prop = colorStyleProps[actionTypeId];
+        var prop = colorStyleProps[actionItem.actionTypeId];
         var rValue = Math.round(actionState.rValue);
         var gValue = Math.round(actionState.gValue);
         var bValue = Math.round(actionState.bValue);
@@ -14464,8 +14553,8 @@ function renderStyle(element, refState, actionState, actionItem, styleProp, elem
 
     default:
       {
-        var _config$unit = config.unit,
-            unit = _config$unit === void 0 ? '' : _config$unit;
+        var _actionItem$config$un = actionItem.config.unit,
+            unit = _actionItem$config$un === void 0 ? '' : _actionItem$config$un;
         addWillChange(element, styleProp, elementApi);
         setStyle(element, styleProp, actionState.value + unit);
         break;
@@ -14544,9 +14633,9 @@ function removeWillChange(element, prop, elementApi) {
 } // $FlowFixMe
 
 
-function clearAllStyles(_ref13) {
-  var store = _ref13.store,
-      elementApi = _ref13.elementApi;
+function clearAllStyles(_ref14) {
+  var store = _ref14.store,
+      elementApi = _ref14.elementApi;
 
   var _store$getState = store.getState(),
       ixData = _store$getState.ixData;
@@ -14578,11 +14667,11 @@ function clearAllStyles(_ref13) {
 } // $FlowFixMe
 
 
-function clearActionListStyles(_ref14) {
-  var _ref14$actionList = _ref14.actionList,
-      actionList = _ref14$actionList === void 0 ? {} : _ref14$actionList,
-      event = _ref14.event,
-      elementApi = _ref14.elementApi;
+function clearActionListStyles(_ref15) {
+  var _ref15$actionList = _ref15.actionList,
+      actionList = _ref15$actionList === void 0 ? {} : _ref15$actionList,
+      event = _ref15.event,
+      elementApi = _ref15.elementApi;
   var actionItemGroups = actionList.actionItemGroups,
       continuousParameterGroups = actionList.continuousParameterGroups;
   actionItemGroups && actionItemGroups.forEach(function (actionGroup) {
@@ -14604,14 +14693,14 @@ function clearActionListStyles(_ref14) {
   });
 }
 
-function clearActionGroupStyles(_ref15) {
-  var actionGroup = _ref15.actionGroup,
-      event = _ref15.event,
-      elementApi = _ref15.elementApi;
+function clearActionGroupStyles(_ref16) {
+  var actionGroup = _ref16.actionGroup,
+      event = _ref16.event,
+      elementApi = _ref16.elementApi;
   var actionItems = actionGroup.actionItems;
-  actionItems.forEach(function (_ref16) {
-    var actionTypeId = _ref16.actionTypeId,
-        config = _ref16.config;
+  actionItems.forEach(function (_ref17) {
+    var actionTypeId = _ref17.actionTypeId,
+        config = _ref17.config;
     var clearElement;
 
     if ((0, _IX2VanillaPlugins.isPluginType)(actionTypeId)) {
@@ -14659,10 +14748,10 @@ function cleanupHTMLElement(element, actionItem, elementApi) {
   }
 }
 
-var processElementByType = function processElementByType(_ref17) {
-  var effect = _ref17.effect,
-      actionTypeId = _ref17.actionTypeId,
-      elementApi = _ref17.elementApi;
+var processElementByType = function processElementByType(_ref18) {
+  var effect = _ref18.effect,
+      actionTypeId = _ref18.actionTypeId,
+      elementApi = _ref18.elementApi;
   return function (element) {
     switch (actionTypeId) {
       case TRANSFORM_MOVE:
@@ -14674,6 +14763,10 @@ var processElementByType = function processElementByType(_ref17) {
 
       case STYLE_FILTER:
         effect(element, FILTER, elementApi);
+        break;
+
+      case STYLE_FONT_VARIATION:
+        effect(element, FONT_VARIATION_SETTINGS, elementApi);
         break;
 
       case STYLE_OPACITY:
@@ -14754,10 +14847,10 @@ function getActionListProgress(actionList, instance) {
 } // $FlowFixMe
 
 
-function reduceListToGroup(_ref18) {
-  var actionList = _ref18.actionList,
-      actionItemId = _ref18.actionItemId,
-      rawData = _ref18.rawData;
+function reduceListToGroup(_ref19) {
+  var actionList = _ref19.actionList,
+      actionItemId = _ref19.actionItemId,
+      rawData = _ref19.rawData;
   var actionItemGroups = actionList.actionItemGroups,
       continuousParameterGroups = actionList.continuousParameterGroups;
   var newActionItems = [];
@@ -14770,14 +14863,14 @@ function reduceListToGroup(_ref18) {
     return actionItem.id === actionItemId;
   };
 
-  actionItemGroups && actionItemGroups.some(function (_ref19) {
-    var actionItems = _ref19.actionItems;
+  actionItemGroups && actionItemGroups.some(function (_ref20) {
+    var actionItems = _ref20.actionItems;
     return actionItems.some(takeItemUntilMatch);
   });
   continuousParameterGroups && continuousParameterGroups.some(function (paramGroup) {
     var continuousActionGroups = paramGroup.continuousActionGroups;
-    return continuousActionGroups.some(function (_ref20) {
-      var actionItems = _ref20.actionItems;
+    return continuousActionGroups.some(function (_ref21) {
+      var actionItems = _ref21.actionItems;
       return actionItems.some(takeItemUntilMatch);
     });
   });
@@ -14790,8 +14883,8 @@ function reduceListToGroup(_ref18) {
 } // $FlowFixMe
 
 
-function shouldNamespaceEventParameter(eventTypeId, _ref22) {
-  var basedOn = _ref22.basedOn;
+function shouldNamespaceEventParameter(eventTypeId, _ref23) {
+  var basedOn = _ref23.basedOn;
   return eventTypeId === _constants.EventTypeConsts.SCROLLING_IN_VIEW && (basedOn === _constants.EventBasedOn.ELEMENT || basedOn == null) || eventTypeId === _constants.EventTypeConsts.MOUSE_MOVE && basedOn === _constants.EventBasedOn.ELEMENT;
 }
 
@@ -15173,7 +15266,7 @@ module.exports = findLastIndex;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 var _typeof2 = _interopRequireDefault(__webpack_require__(13));
 
@@ -16841,7 +16934,7 @@ module.exports = now;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 var _typeof2 = _interopRequireDefault(__webpack_require__(13));
 
@@ -17036,7 +17129,7 @@ function getRefType(ref) {
 "use strict";
 
 
-var _interopRequireDefault2 = __webpack_require__(1);
+var _interopRequireDefault2 = __webpack_require__(0);
 
 var _defineProperty2 = _interopRequireDefault2(__webpack_require__(21));
 
@@ -17044,7 +17137,7 @@ var _typeof2 = _interopRequireDefault2(__webpack_require__(13));
 
 var _default2;
 
-var _interopRequireDefault = __webpack_require__(1);
+var _interopRequireDefault = __webpack_require__(0);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -19062,6 +19155,679 @@ Webflow.define('touch', module.exports = function ($) {
 "use strict";
  // @wf-will-never-add-flow-to-this-file
 
+/* globals
+  window,
+  document,
+  FormData,
+  WEBFLOW_FORM_API_HOST,
+  WEBFLOW_FORM_OLDIE_HOST
+*/
+
+/* eslint-disable no-var */
+
+/**
+ * Webflow: Forms
+ */
+
+var _interopRequireDefault = __webpack_require__(0);
+
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(337));
+
+var Webflow = __webpack_require__(4);
+
+Webflow.define('forms', module.exports = function ($, _) {
+  var api = {};
+  var $doc = $(document);
+  var $forms;
+  var loc = window.location;
+  var retro = window.XDomainRequest && !window.atob;
+  var namespace = '.w-form';
+  var siteId;
+  var emailField = /e(-)?mail/i;
+  var emailValue = /^\S+@\S+$/;
+  var alert = window.alert;
+  var inApp = Webflow.env();
+  var listening;
+  var formUrl;
+  var signFileUrl; // MailChimp domains: list-manage.com + mirrors
+
+  var chimpRegex = /list-manage[1-9]?.com/i;
+
+  var disconnected = _.debounce(function () {
+    alert('Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue.');
+  }, 100);
+
+  api.ready = api.design = api.preview = function () {
+    // Init forms
+    init(); // Wire document events on published site only once
+
+    if (!inApp && !listening) {
+      addListeners();
+    }
+  };
+
+  function init() {
+    siteId = $('html').attr('data-wf-site');
+    formUrl = "https://webflow.com" + '/api/v1/form/' + siteId; // Work around same-protocol IE XDR limitation - without this IE9 and below forms won't submit
+
+    if (retro && formUrl.indexOf("https://webflow.com") >= 0) {
+      formUrl = formUrl.replace("https://webflow.com", "https://formdata.webflow.com");
+    }
+
+    signFileUrl = "".concat(formUrl, "/signFile");
+    $forms = $(namespace + ' form');
+
+    if (!$forms.length) {
+      return;
+    }
+
+    $forms.each(build);
+  }
+
+  function build(i, el) {
+    // Store form state using namespace
+    var $el = $(el);
+    var data = $.data(el, namespace);
+
+    if (!data) {
+      data = $.data(el, namespace, {
+        form: $el
+      });
+    } // data.form
+
+
+    reset(data);
+    var wrap = $el.closest('div.w-form');
+    data.done = wrap.find('> .w-form-done');
+    data.fail = wrap.find('> .w-form-fail');
+    data.fileUploads = wrap.find('.w-file-upload');
+    data.fileUploads.each(function (j) {
+      initFileUpload(j, data);
+    }); // Accessiblity fixes
+
+    var formName = data.form.attr('aria-label') || data.form.attr('data-name') || 'Form';
+
+    if (!data.done.attr('aria-label')) {
+      data.form.attr('aria-label', formName);
+    }
+
+    data.done.attr('tabindex', '-1');
+    data.done.attr('role', 'region');
+
+    if (!data.done.attr('aria-label')) {
+      data.done.attr('aria-label', formName + ' success');
+    }
+
+    data.fail.attr('tabindex', '-1');
+    data.fail.attr('role', 'region');
+
+    if (!data.fail.attr('aria-label')) {
+      data.fail.attr('aria-label', formName + ' failure');
+    }
+
+    var action = data.action = $el.attr('action');
+    data.handler = null;
+    data.redirect = $el.attr('data-redirect'); // MailChimp form
+
+    if (chimpRegex.test(action)) {
+      data.handler = submitMailChimp;
+      return;
+    } // Custom form action
+
+
+    if (action) {
+      return;
+    } // Webflow forms for hosting accounts
+
+
+    if (siteId) {
+      data.handler = typeof hostedSubmitWebflow === 'function' ? hostedSubmitWebflow : exportedSubmitWebflow;
+      return;
+    } // Alert for disconnected Webflow forms
+
+
+    disconnected();
+  }
+
+  function addListeners() {
+    listening = true; // Handle form submission for Webflow forms
+
+    $doc.on('submit', namespace + ' form', function (evt) {
+      var data = $.data(this, namespace);
+
+      if (data.handler) {
+        data.evt = evt;
+        data.handler(data);
+      }
+    }); // handle checked ui for custom checkbox and radio button
+
+    var CHECKBOX_CLASS_NAME = '.w-checkbox-input';
+    var RADIO_INPUT_CLASS_NAME = '.w-radio-input';
+    var CHECKED_CLASS = 'w--redirected-checked';
+    var FOCUSED_CLASS = 'w--redirected-focus';
+    var FOCUSED_VISIBLE_CLASS = 'w--redirected-focus-visible';
+    var focusVisibleSelectors = ':focus-visible, [data-wf-focus-visible]';
+    var CUSTOM_CONTROLS = [['checkbox', CHECKBOX_CLASS_NAME], ['radio', RADIO_INPUT_CLASS_NAME]];
+    $doc.on('change', namespace + " form input[type=\"checkbox\"]:not(" + CHECKBOX_CLASS_NAME + ')', function (evt) {
+      $(evt.target).siblings(CHECKBOX_CLASS_NAME).toggleClass(CHECKED_CLASS);
+    });
+    $doc.on('change', namespace + " form input[type=\"radio\"]", function (evt) {
+      $("input[name=\"".concat(evt.target.name, "\"]:not(").concat(CHECKBOX_CLASS_NAME, ")")).map(function (i, el) {
+        return $(el).siblings(RADIO_INPUT_CLASS_NAME).removeClass(CHECKED_CLASS);
+      });
+      var $target = $(evt.target);
+
+      if (!$target.hasClass('w-radio-input')) {
+        $target.siblings(RADIO_INPUT_CLASS_NAME).addClass(CHECKED_CLASS);
+      }
+    });
+    CUSTOM_CONTROLS.forEach(function (_ref) {
+      var _ref2 = (0, _slicedToArray2["default"])(_ref, 2),
+          controlType = _ref2[0],
+          customControlClassName = _ref2[1];
+
+      $doc.on('focus', namespace + " form input[type=\"".concat(controlType, "\"]:not(") + customControlClassName + ')', function (evt) {
+        $(evt.target).siblings(customControlClassName).addClass(FOCUSED_CLASS);
+        $(evt.target).filter(focusVisibleSelectors).siblings(customControlClassName).addClass(FOCUSED_VISIBLE_CLASS);
+      });
+      $doc.on('blur', namespace + " form input[type=\"".concat(controlType, "\"]:not(") + customControlClassName + ')', function (evt) {
+        $(evt.target).siblings(customControlClassName).removeClass("".concat(FOCUSED_CLASS, " ").concat(FOCUSED_VISIBLE_CLASS));
+      });
+    });
+  } // Reset data common to all submit handlers
+
+
+  function reset(data) {
+    var btn = data.btn = data.form.find(':input[type="submit"]');
+    data.wait = data.btn.attr('data-wait') || null;
+    data.success = false;
+    btn.prop('disabled', false);
+    data.label && btn.val(data.label);
+  } // Disable submit button
+
+
+  function disableBtn(data) {
+    var btn = data.btn;
+    var wait = data.wait;
+    btn.prop('disabled', true); // Show wait text and store previous label
+
+    if (wait) {
+      data.label = btn.val();
+      btn.val(wait);
+    }
+  } // Find form fields, validate, and set value pairs
+
+
+  function findFields(form, result) {
+    var status = null;
+    result = result || {}; // The ":input" selector is a jQuery shortcut to select all inputs, selects, textareas
+
+    form.find(':input:not([type="submit"]):not([type="file"])').each(function (i, el) {
+      var field = $(el);
+      var type = field.attr('type');
+      var name = field.attr('data-name') || field.attr('name') || 'Field ' + (i + 1);
+      var value = field.val();
+
+      if (type === 'checkbox') {
+        value = field.is(':checked');
+      } else if (type === 'radio') {
+        // Radio group value already processed
+        if (result[name] === null || typeof result[name] === 'string') {
+          return;
+        }
+
+        value = form.find('input[name="' + field.attr('name') + '"]:checked').val() || null;
+      }
+
+      if (typeof value === 'string') {
+        value = $.trim(value);
+      }
+
+      result[name] = value;
+      status = status || getStatus(field, type, name, value);
+    });
+    return status;
+  }
+
+  function findFileUploads(form) {
+    var result = {};
+    form.find(':input[type="file"]').each(function (i, el) {
+      var field = $(el);
+      var name = field.attr('data-name') || field.attr('name') || 'File ' + (i + 1);
+      var value = field.attr('data-value');
+
+      if (typeof value === 'string') {
+        value = $.trim(value);
+      }
+
+      result[name] = value;
+    });
+    return result;
+  }
+
+  var trackingCookieNameMap = {
+    _mkto_trk: 'marketo' // __hstc: 'hubspot',
+
+  };
+
+  function collectEnterpriseTrackingCookies() {
+    var cookies = document.cookie.split('; ').reduce(function (acc, cookie) {
+      var splitCookie = cookie.split('=');
+      var name = splitCookie[0];
+
+      if (name in trackingCookieNameMap) {
+        var mappedName = trackingCookieNameMap[name];
+        var value = splitCookie.slice(1).join('=');
+        acc[mappedName] = value;
+      }
+
+      return acc;
+    }, {});
+    return cookies;
+  }
+
+  function getStatus(field, type, name, value) {
+    var status = null;
+
+    if (type === 'password') {
+      status = 'Passwords cannot be submitted.';
+    } else if (field.attr('required')) {
+      if (!value) {
+        status = 'Please fill out the required field: ' + name;
+      } else if (emailField.test(field.attr('type'))) {
+        if (!emailValue.test(value)) {
+          status = 'Please enter a valid email address for: ' + name;
+        }
+      }
+    } else if (name === 'g-recaptcha-response' && !value) {
+      status = 'Please confirm you’re not a robot.';
+    }
+
+    return status;
+  }
+
+  function exportedSubmitWebflow(data) {
+    preventDefault(data);
+    afterSubmit(data);
+  } // Submit form to MailChimp
+
+
+  function submitMailChimp(data) {
+    reset(data);
+    var form = data.form;
+    var payload = {}; // Skip Ajax submission if http/s mismatch, fallback to POST instead
+
+    if (/^https/.test(loc.href) && !/^https/.test(data.action)) {
+      form.attr('method', 'post');
+      return;
+    }
+
+    preventDefault(data); // Find & populate all fields
+
+    var status = findFields(form, payload);
+
+    if (status) {
+      return alert(status);
+    } // Disable submit button
+
+
+    disableBtn(data); // Use special format for MailChimp params
+
+    var fullName;
+
+    _.each(payload, function (value, key) {
+      if (emailField.test(key)) {
+        payload.EMAIL = value;
+      }
+
+      if (/^((full[ _-]?)?name)$/i.test(key)) {
+        fullName = value;
+      }
+
+      if (/^(first[ _-]?name)$/i.test(key)) {
+        payload.FNAME = value;
+      }
+
+      if (/^(last[ _-]?name)$/i.test(key)) {
+        payload.LNAME = value;
+      }
+    });
+
+    if (fullName && !payload.FNAME) {
+      fullName = fullName.split(' ');
+      payload.FNAME = fullName[0];
+      payload.LNAME = payload.LNAME || fullName[1];
+    } // Use the (undocumented) MailChimp jsonp api
+
+
+    var url = data.action.replace('/post?', '/post-json?') + '&c=?'; // Add special param to prevent bot signups
+
+    var userId = url.indexOf('u=') + 2;
+    userId = url.substring(userId, url.indexOf('&', userId));
+    var listId = url.indexOf('id=') + 3;
+    listId = url.substring(listId, url.indexOf('&', listId));
+    payload['b_' + userId + '_' + listId] = '';
+    $.ajax({
+      url: url,
+      data: payload,
+      dataType: 'jsonp'
+    }).done(function (resp) {
+      data.success = resp.result === 'success' || /already/.test(resp.msg);
+
+      if (!data.success) {
+        console.info('MailChimp error: ' + resp.msg);
+      }
+
+      afterSubmit(data);
+    }).fail(function () {
+      afterSubmit(data);
+    });
+  } // Common callback which runs after all Ajax submissions
+
+
+  function afterSubmit(data) {
+    var form = data.form;
+    var redirect = data.redirect;
+    var success = data.success; // Redirect to a success url if defined
+
+    if (success && redirect) {
+      Webflow.location(redirect);
+      return;
+    } // Show or hide status divs
+
+
+    data.done.toggle(success);
+    data.fail.toggle(!success);
+
+    if (success) {
+      data.done.focus();
+    } else {
+      data.fail.focus();
+    } // Hide form on success
+
+
+    form.toggle(!success); // Reset data and enable submit button
+
+    reset(data);
+  }
+
+  function preventDefault(data) {
+    data.evt && data.evt.preventDefault();
+    data.evt = null;
+  }
+
+  function initFileUpload(i, form) {
+    if (!form.fileUploads || !form.fileUploads[i]) {
+      return;
+    }
+
+    var file;
+    var $el = $(form.fileUploads[i]);
+    var $defaultWrap = $el.find('> .w-file-upload-default');
+    var $uploadingWrap = $el.find('> .w-file-upload-uploading');
+    var $successWrap = $el.find('> .w-file-upload-success');
+    var $errorWrap = $el.find('> .w-file-upload-error');
+    var $input = $defaultWrap.find('.w-file-upload-input');
+    var $label = $defaultWrap.find('.w-file-upload-label');
+    var $labelChildren = $label.children();
+    var $errorMsgEl = $errorWrap.find('.w-file-upload-error-msg');
+    var $fileEl = $successWrap.find('.w-file-upload-file');
+    var $removeEl = $successWrap.find('.w-file-remove-link');
+    var $fileNameEl = $fileEl.find('.w-file-upload-file-name');
+    var sizeErrMsg = $errorMsgEl.attr('data-w-size-error');
+    var typeErrMsg = $errorMsgEl.attr('data-w-type-error');
+    var genericErrMsg = $errorMsgEl.attr('data-w-generic-error'); // Accessiblity fixes
+    // The file upload Input is not stylable by the designer, so we are
+    // going to pretend the Label is the input. ¯\_(ツ)_/¯
+
+    if (!inApp) {
+      $label.on('click keydown', function (e) {
+        if (e.type === 'keydown' && e.which !== 13 && e.which !== 32) {
+          return;
+        }
+
+        e.preventDefault();
+        $input.click();
+      });
+    } // Both of these are added through CSS
+
+
+    $label.find('.w-icon-file-upload-icon').attr('aria-hidden', 'true');
+    $removeEl.find('.w-icon-file-upload-remove').attr('aria-hidden', 'true');
+
+    if (!inApp) {
+      $removeEl.on('click keydown', function (e) {
+        if (e.type === 'keydown') {
+          if (e.which !== 13 && e.which !== 32) {
+            return;
+          }
+
+          e.preventDefault();
+        }
+
+        $input.removeAttr('data-value');
+        $input.val('');
+        $fileNameEl.html('');
+        $defaultWrap.toggle(true);
+        $successWrap.toggle(false);
+        $label.focus();
+      });
+      $input.on('change', function (e) {
+        file = e.target && e.target.files && e.target.files[0];
+
+        if (!file) {
+          return;
+        } // Show uploading
+
+
+        $defaultWrap.toggle(false);
+        $errorWrap.toggle(false);
+        $uploadingWrap.toggle(true);
+        $uploadingWrap.focus(); // Set filename
+
+        $fileNameEl.text(file.name); // Disable submit button
+
+        if (!isUploading()) {
+          disableBtn(form);
+        }
+
+        form.fileUploads[i].uploading = true;
+        signFile(file, afterSign);
+      }); // Setting input width 1px and height equal label
+      // This is so the browser required error will show up
+
+      var height = $label.outerHeight();
+      $input.height(height);
+      $input.width(1);
+    } else {
+      $input.on('click', function (e) {
+        e.preventDefault();
+      });
+      $label.on('click', function (e) {
+        e.preventDefault();
+      });
+      $labelChildren.on('click', function (e) {
+        e.preventDefault();
+      });
+    }
+
+    function parseError(err) {
+      var errorMsg = err.responseJSON && err.responseJSON.msg;
+      var userError = genericErrMsg;
+
+      if (typeof errorMsg === 'string' && errorMsg.indexOf('InvalidFileTypeError') === 0) {
+        userError = typeErrMsg;
+      } else if (typeof errorMsg === 'string' && errorMsg.indexOf('MaxFileSizeError') === 0) {
+        userError = sizeErrMsg;
+      }
+
+      $errorMsgEl.text(userError);
+      $input.removeAttr('data-value');
+      $input.val('');
+      $uploadingWrap.toggle(false);
+      $defaultWrap.toggle(true);
+      $errorWrap.toggle(true);
+      $errorWrap.focus();
+      form.fileUploads[i].uploading = false;
+
+      if (!isUploading()) {
+        reset(form);
+      }
+    }
+
+    function afterSign(err, data) {
+      if (err) {
+        return parseError(err);
+      }
+
+      var fileName = data.fileName;
+      var postData = data.postData;
+      var fileId = data.fileId;
+      var s3Url = data.s3Url;
+      $input.attr('data-value', fileId);
+      uploadS3(s3Url, postData, file, fileName, afterUpload);
+    }
+
+    function afterUpload(err) {
+      if (err) {
+        return parseError(err);
+      } // Show success
+
+
+      $uploadingWrap.toggle(false);
+      $successWrap.css('display', 'inline-block');
+      $successWrap.focus();
+      form.fileUploads[i].uploading = false;
+
+      if (!isUploading()) {
+        reset(form);
+      }
+    }
+
+    function isUploading() {
+      var uploads = form.fileUploads && form.fileUploads.toArray() || [];
+      return uploads.some(function (value) {
+        return value.uploading;
+      });
+    }
+  }
+
+  function signFile(file, cb) {
+    var payload = new URLSearchParams({
+      name: file.name,
+      size: file.size
+    });
+    $.ajax({
+      type: 'GET',
+      url: "".concat(signFileUrl, "?").concat(payload),
+      crossDomain: true
+    }).done(function (data) {
+      cb(null, data);
+    }).fail(function (err) {
+      cb(err);
+    });
+  }
+
+  function uploadS3(url, data, file, fileName, cb) {
+    var formData = new FormData();
+
+    for (var k in data) {
+      formData.append(k, data[k]);
+    }
+
+    formData.append('file', file, fileName);
+    $.ajax({
+      type: 'POST',
+      url: url,
+      data: formData,
+      processData: false,
+      contentType: false
+    }).done(function () {
+      cb(null);
+    }).fail(function (err) {
+      cb(err);
+    });
+  } // Export module
+
+
+  return api;
+});
+
+/***/ }),
+/* 337 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithHoles = __webpack_require__(338);
+
+var iterableToArrayLimit = __webpack_require__(339);
+
+var nonIterableRest = __webpack_require__(340);
+
+function _slicedToArray(arr, i) {
+  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || nonIterableRest();
+}
+
+module.exports = _slicedToArray;
+
+/***/ }),
+/* 338 */
+/***/ (function(module, exports) {
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+module.exports = _arrayWithHoles;
+
+/***/ }),
+/* 339 */
+/***/ (function(module, exports) {
+
+function _iterableToArrayLimit(arr, i) {
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+module.exports = _iterableToArrayLimit;
+
+/***/ }),
+/* 340 */
+/***/ (function(module, exports) {
+
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance");
+}
+
+module.exports = _nonIterableRest;
+
+/***/ }),
+/* 341 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+ // @wf-will-never-add-flow-to-this-file
+
 /* globals window, document */
 
 /* eslint-disable no-var */
@@ -19655,7 +20421,7 @@ Webflow.define('navbar', module.exports = function ($, _) {
 });
 
 /***/ }),
-/* 337 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20510,5 +21276,5 @@ Webflow.define('slider', module.exports = function ($, _) {
  * Webflow: Interactions 2.0: Init
  */
 Webflow.require('ix2').init(
-{"events":{"e-20":{"id":"e-20","animationType":"custom","eventTypeId":"PAGE_FINISH","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-4","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-19"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c","appliesTo":"PAGE","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c","appliesTo":"PAGE","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1536794461449},"e-21":{"id":"e-21","name":"","animationType":"preset","eventTypeId":"MOUSE_OVER","action":{"id":"","actionTypeId":"RUBBER_BAND_EFFECT","instant":false,"config":{"actionListId":"rubberBand","autoStopEventId":"e-22"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|b94db449-593c-4797-4507-4b2d323d43be","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|b94db449-593c-4797-4507-4b2d323d43be","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":0,"direction":null,"effectIn":null},"createdOn":1644495520064},"e-23":{"id":"e-23","name":"","animationType":"preset","eventTypeId":"MOUSE_OVER","action":{"id":"","actionTypeId":"RUBBER_BAND_EFFECT","instant":false,"config":{"actionListId":"rubberBand","autoStopEventId":"e-24"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|cb532ceb-32cf-2b74-0cc1-fbc4e2756cb3","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|cb532ceb-32cf-2b74-0cc1-fbc4e2756cb3","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":0,"direction":null,"effectIn":null},"createdOn":1644495574850},"e-25":{"id":"e-25","name":"","animationType":"preset","eventTypeId":"MOUSE_OVER","action":{"id":"","actionTypeId":"RUBBER_BAND_EFFECT","instant":false,"config":{"actionListId":"rubberBand","autoStopEventId":"e-26"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|4e81793d-be2d-c053-28b9-de6717032501","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|4e81793d-be2d-c053-28b9-de6717032501","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":0,"direction":null,"effectIn":null},"createdOn":1644495582297},"e-27":{"id":"e-27","name":"","animationType":"preset","eventTypeId":"MOUSE_OVER","action":{"id":"","actionTypeId":"RUBBER_BAND_EFFECT","instant":false,"config":{"actionListId":"rubberBand","autoStopEventId":"e-28"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|70b1933f-ef3b-31d7-e9e7-e9955e056468","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|70b1933f-ef3b-31d7-e9e7-e9955e056468","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":0,"direction":null,"effectIn":null},"createdOn":1644495589122},"e-55":{"id":"e-55","name":"","animationType":"preset","eventTypeId":"SCROLL_INTO_VIEW","action":{"id":"","actionTypeId":"GROW_BIG_EFFECT","instant":false,"config":{"actionListId":"growBigIn","autoStopEventId":"e-56"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|67049f3f-95ad-01d7-dbd0-13ad9b417241","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|67049f3f-95ad-01d7-dbd0-13ad9b417241","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":0,"scrollOffsetUnit":"%","delay":200,"direction":null,"effectIn":true},"createdOn":1656595548752},"e-59":{"id":"e-59","name":"","animationType":"preset","eventTypeId":"SCROLL_INTO_VIEW","action":{"id":"","actionTypeId":"FLIP_EFFECT","instant":false,"config":{"actionListId":"flipInLeft","autoStopEventId":"e-60"}},"mediaQueries":["main","medium","small","tiny"],"target":{"selector":".publisher-banner","originalId":"62e11a5d52c9ffe6088b3321|6503734f-7206-9be3-36a7-171ff727979a","appliesTo":"CLASS"},"targets":[{"selector":".publisher-banner","originalId":"62e11a5d52c9ffe6088b3321|6503734f-7206-9be3-36a7-171ff727979a","appliesTo":"CLASS"}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":0,"scrollOffsetUnit":"%","delay":100,"direction":"LEFT","effectIn":true},"createdOn":1657189077978},"e-61":{"id":"e-61","name":"","animationType":"preset","eventTypeId":"SCROLL_INTO_VIEW","action":{"id":"","actionTypeId":"SLIDE_EFFECT","instant":false,"config":{"actionListId":"slideInBottom","autoStopEventId":"e-62"}},"mediaQueries":["main","medium","small","tiny"],"target":{"selector":".right-feature","originalId":"62e11a5d52c9ffe6088b3321|6de3ce16-c3d4-2482-d5b5-219cd50e68e2","appliesTo":"CLASS"},"targets":[{"selector":".right-feature","originalId":"62e11a5d52c9ffe6088b3321|6de3ce16-c3d4-2482-d5b5-219cd50e68e2","appliesTo":"CLASS"}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":0,"scrollOffsetUnit":"%","delay":500,"direction":"BOTTOM","effectIn":true},"createdOn":1657189229709}},"actionLists":{"a-4":{"id":"a-4","title":"Page load","actionItemGroups":[{"actionItems":[{"id":"a-4-n-5","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"","duration":500,"target":{"id":"62e11a5d52c9ff35c48b331c|77e69727-c455-8e07-0990-833a661c94ea"},"yValue":60,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}},{"id":"a-4-n-6","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"","duration":500,"target":{"id":"62e11a5d52c9ff35c48b331c|77e69727-c455-8e07-0990-833a661c94ea"},"value":0,"unit":""}},{"id":"a-4-n","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"","duration":500,"target":{"id":"62e11a5d52c9ff35c48b331c|6b220cb1-4b9c-7fb0-75b9-53ff4a6c35a2"},"yValue":30,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}},{"id":"a-4-n-2","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"","duration":500,"target":{"id":"62e11a5d52c9ff35c48b331c|6b220cb1-4b9c-7fb0-75b9-53ff4a6c35a2"},"value":0,"unit":""}}]},{"actionItems":[{"id":"a-4-n-4","actionTypeId":"STYLE_OPACITY","config":{"delay":250,"easing":"outExpo","duration":1500,"target":{"id":"62e11a5d52c9ff35c48b331c|6b220cb1-4b9c-7fb0-75b9-53ff4a6c35a2"},"value":1,"unit":""}},{"id":"a-4-n-3","actionTypeId":"TRANSFORM_MOVE","config":{"delay":250,"easing":"outExpo","duration":1500,"target":{"id":"62e11a5d52c9ff35c48b331c|6b220cb1-4b9c-7fb0-75b9-53ff4a6c35a2"},"yValue":0,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}},{"id":"a-4-n-8","actionTypeId":"STYLE_OPACITY","config":{"delay":250,"easing":"outExpo","duration":3000,"target":{"id":"62e11a5d52c9ff35c48b331c|77e69727-c455-8e07-0990-833a661c94ea"},"value":1,"unit":""}},{"id":"a-4-n-7","actionTypeId":"TRANSFORM_MOVE","config":{"delay":250,"easing":"outExpo","duration":3000,"target":{"id":"62e11a5d52c9ff35c48b331c|77e69727-c455-8e07-0990-833a661c94ea"},"yValue":0,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}}]}],"useFirstGroupAsInitialState":true,"createdOn":1536794726643},"rubberBand":{"id":"rubberBand","actionItemGroups":[{"actionItems":[{"actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"outQuart","duration":250,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":1.25,"yValue":0.7500000000000001}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"outElastic","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":1,"yValue":1}}]}]},"growBigIn":{"id":"growBigIn","useFirstGroupAsInitialState":true,"actionItemGroups":[{"actionItems":[{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":0}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":0,"yValue":0}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":1,"yValue":1}},{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":1}}]}]},"flipInLeft":{"id":"flipInLeft","useFirstGroupAsInitialState":true,"actionItemGroups":[{"actionItems":[{"actionTypeId":"STYLE_OPACITY","config":{"duration":0,"delay":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":0}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_ROTATE","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":0,"yValue":-90,"zValue":0,"xUnit":"DEG","yUnit":"DEG","zUnit":"DEG"}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_ROTATE","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":0,"yValue":0,"zValue":0,"xUnit":"DEG","yUnit":"DEG","zUnit":"DEG"}},{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":1}}]}]},"slideInBottom":{"id":"slideInBottom","useFirstGroupAsInitialState":true,"actionItemGroups":[{"actionItems":[{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":0}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":0,"yValue":100,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":0,"yValue":0,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}},{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":1}}]}]}},"site":{"mediaQueries":[{"key":"main","min":992,"max":10000},{"key":"medium","min":768,"max":991},{"key":"small","min":480,"max":767},{"key":"tiny","min":0,"max":479}]}}
+{"events":{"e-21":{"id":"e-21","name":"","animationType":"preset","eventTypeId":"MOUSE_OVER","action":{"id":"","actionTypeId":"RUBBER_BAND_EFFECT","instant":false,"config":{"actionListId":"rubberBand","autoStopEventId":"e-22"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|b94db449-593c-4797-4507-4b2d323d43be","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|b94db449-593c-4797-4507-4b2d323d43be","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":0,"direction":null,"effectIn":null},"createdOn":1644495520064},"e-23":{"id":"e-23","name":"","animationType":"preset","eventTypeId":"MOUSE_OVER","action":{"id":"","actionTypeId":"RUBBER_BAND_EFFECT","instant":false,"config":{"actionListId":"rubberBand","autoStopEventId":"e-24"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|cb532ceb-32cf-2b74-0cc1-fbc4e2756cb3","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|cb532ceb-32cf-2b74-0cc1-fbc4e2756cb3","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":0,"direction":null,"effectIn":null},"createdOn":1644495574850},"e-25":{"id":"e-25","name":"","animationType":"preset","eventTypeId":"MOUSE_OVER","action":{"id":"","actionTypeId":"RUBBER_BAND_EFFECT","instant":false,"config":{"actionListId":"rubberBand","autoStopEventId":"e-26"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|4e81793d-be2d-c053-28b9-de6717032501","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|4e81793d-be2d-c053-28b9-de6717032501","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":0,"direction":null,"effectIn":null},"createdOn":1644495582297},"e-27":{"id":"e-27","name":"","animationType":"preset","eventTypeId":"MOUSE_OVER","action":{"id":"","actionTypeId":"RUBBER_BAND_EFFECT","instant":false,"config":{"actionListId":"rubberBand","autoStopEventId":"e-28"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|70b1933f-ef3b-31d7-e9e7-e9955e056468","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|70b1933f-ef3b-31d7-e9e7-e9955e056468","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":0,"direction":null,"effectIn":null},"createdOn":1644495589122},"e-59":{"id":"e-59","name":"","animationType":"preset","eventTypeId":"SCROLL_INTO_VIEW","action":{"id":"","actionTypeId":"FLIP_EFFECT","instant":false,"config":{"actionListId":"flipInLeft","autoStopEventId":"e-60"}},"mediaQueries":["main","medium","small","tiny"],"target":{"selector":".publisher-banner","originalId":"62e11a5d52c9ffe6088b3321|6503734f-7206-9be3-36a7-171ff727979a","appliesTo":"CLASS"},"targets":[{"selector":".publisher-banner","originalId":"62e11a5d52c9ffe6088b3321|6503734f-7206-9be3-36a7-171ff727979a","appliesTo":"CLASS"}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":0,"scrollOffsetUnit":"%","delay":100,"direction":"LEFT","effectIn":true},"createdOn":1657189077978},"e-61":{"id":"e-61","name":"","animationType":"preset","eventTypeId":"SCROLL_INTO_VIEW","action":{"id":"","actionTypeId":"SLIDE_EFFECT","instant":false,"config":{"actionListId":"slideInBottom","autoStopEventId":"e-62"}},"mediaQueries":["main","medium","small","tiny"],"target":{"selector":".right-feature","originalId":"62e11a5d52c9ffe6088b3321|6de3ce16-c3d4-2482-d5b5-219cd50e68e2","appliesTo":"CLASS"},"targets":[{"selector":".right-feature","originalId":"62e11a5d52c9ffe6088b3321|6de3ce16-c3d4-2482-d5b5-219cd50e68e2","appliesTo":"CLASS"}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":0,"scrollOffsetUnit":"%","delay":500,"direction":"BOTTOM","effectIn":true},"createdOn":1657189229709},"e-64":{"id":"e-64","name":"","animationType":"custom","eventTypeId":"MOUSE_OVER","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-12","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-65"}},"mediaQueries":["main"],"target":{"selector":"._w-flip-card","originalId":"62e11a5d52c9ffe6088b3321|f5b51cd5-bdcc-eb20-7422-04024d2fb7ee","appliesTo":"CLASS"},"targets":[{"selector":"._w-flip-card","originalId":"62e11a5d52c9ffe6088b3321|f5b51cd5-bdcc-eb20-7422-04024d2fb7ee","appliesTo":"CLASS"}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1604560257199},"e-65":{"id":"e-65","name":"","animationType":"custom","eventTypeId":"MOUSE_OUT","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-13","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-64"}},"mediaQueries":["main"],"target":{"selector":"._w-flip-card","originalId":"62e11a5d52c9ffe6088b3321|f5b51cd5-bdcc-eb20-7422-04024d2fb7ee","appliesTo":"CLASS"},"targets":[{"selector":"._w-flip-card","originalId":"62e11a5d52c9ffe6088b3321|f5b51cd5-bdcc-eb20-7422-04024d2fb7ee","appliesTo":"CLASS"}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1604560257201},"e-66":{"id":"e-66","name":"","animationType":"custom","eventTypeId":"MOUSE_CLICK","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-12","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-67"}},"mediaQueries":["medium","small","tiny"],"target":{"selector":"._w-flip-card","originalId":"62e11a5d52c9ffe6088b3321|f5b51cd5-bdcc-eb20-7422-04024d2fb7ee","appliesTo":"CLASS"},"targets":[{"selector":"._w-flip-card","originalId":"62e11a5d52c9ffe6088b3321|f5b51cd5-bdcc-eb20-7422-04024d2fb7ee","appliesTo":"CLASS"}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1604570002484},"e-67":{"id":"e-67","name":"","animationType":"custom","eventTypeId":"MOUSE_SECOND_CLICK","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-13","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-66"}},"mediaQueries":["medium","small","tiny"],"target":{"selector":"._w-flip-card","originalId":"62e11a5d52c9ffe6088b3321|f5b51cd5-bdcc-eb20-7422-04024d2fb7ee","appliesTo":"CLASS"},"targets":[{"selector":"._w-flip-card","originalId":"62e11a5d52c9ffe6088b3321|f5b51cd5-bdcc-eb20-7422-04024d2fb7ee","appliesTo":"CLASS"}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1604570002486},"e-68":{"id":"e-68","name":"","animationType":"custom","eventTypeId":"MOUSE_OVER","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-14","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-69"}},"mediaQueries":["main"],"target":{"selector":".card-btn-link","originalId":"62e11a5d52c9ffe6088b3321|f5b51cd5-bdcc-eb20-7422-04024d2fb80f","appliesTo":"CLASS"},"targets":[{"selector":".card-btn-link","originalId":"62e11a5d52c9ffe6088b3321|f5b51cd5-bdcc-eb20-7422-04024d2fb80f","appliesTo":"CLASS"}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1604559189558},"e-69":{"id":"e-69","name":"","animationType":"custom","eventTypeId":"MOUSE_OUT","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-15","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-68"}},"mediaQueries":["main"],"target":{"selector":".card-btn-link","originalId":"62e11a5d52c9ffe6088b3321|f5b51cd5-bdcc-eb20-7422-04024d2fb80f","appliesTo":"CLASS"},"targets":[{"selector":".card-btn-link","originalId":"62e11a5d52c9ffe6088b3321|f5b51cd5-bdcc-eb20-7422-04024d2fb80f","appliesTo":"CLASS"}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1604559189559},"e-70":{"id":"e-70","name":"","animationType":"custom","eventTypeId":"MOUSE_CLICK","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-16","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-71"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|dcfb162f-14ad-fe1d-9925-7370b9cdb8e8","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|dcfb162f-14ad-fe1d-9925-7370b9cdb8e8","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1663590908914},"e-72":{"id":"e-72","name":"","animationType":"custom","eventTypeId":"MOUSE_MOVE","action":{"id":"","actionTypeId":"GENERAL_CONTINUOUS_ACTION","config":{"actionListId":"a-17","affectedElements":{},"duration":0}},"mediaQueries":["main"],"target":{"selector":".is-magnetic","originalId":"62e11a5d52c9ff35c48b331c|dcfb162f-14ad-fe1d-9925-7370b9cdb8e9","appliesTo":"CLASS"},"targets":[{"selector":".is-magnetic","originalId":"62e11a5d52c9ff35c48b331c|dcfb162f-14ad-fe1d-9925-7370b9cdb8e9","appliesTo":"CLASS"}],"config":[{"continuousParameterGroupId":"a-17-p","selectedAxis":"X_AXIS","basedOn":"ELEMENT","reverse":false,"smoothing":90,"restingState":50},{"continuousParameterGroupId":"a-17-p-2","selectedAxis":"Y_AXIS","basedOn":"ELEMENT","reverse":false,"smoothing":90,"restingState":50}],"createdOn":1639751966758},"e-73":{"id":"e-73","name":"","animationType":"custom","eventTypeId":"MOUSE_CLICK","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-18","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-74"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|dcfb162f-14ad-fe1d-9925-7370b9cdb8ef","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|dcfb162f-14ad-fe1d-9925-7370b9cdb8ef","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1663594178183},"e-75":{"id":"e-75","name":"","animationType":"custom","eventTypeId":"MOUSE_CLICK","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-19","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-76"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|dcfb162f-14ad-fe1d-9925-7370b9cdb8f1","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|dcfb162f-14ad-fe1d-9925-7370b9cdb8f1","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1663594086647},"e-79":{"id":"e-79","name":"","animationType":"preset","eventTypeId":"SCROLL_INTO_VIEW","action":{"id":"","actionTypeId":"SLIDE_EFFECT","instant":false,"config":{"actionListId":"slideInBottom","autoStopEventId":"e-80"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|4593c4b7-56e8-060a-be57-648b0e08fc64","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|4593c4b7-56e8-060a-be57-648b0e08fc64","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":0,"scrollOffsetUnit":"%","delay":0,"direction":"BOTTOM","effectIn":true},"createdOn":1671810065937},"e-81":{"id":"e-81","name":"","animationType":"preset","eventTypeId":"SCROLL_INTO_VIEW","action":{"id":"","actionTypeId":"SLIDE_EFFECT","instant":false,"config":{"actionListId":"slideInRight","autoStopEventId":"e-82"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|25645b20-f4b3-2511-dd25-7208fbd0915e","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|25645b20-f4b3-2511-dd25-7208fbd0915e","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":20,"scrollOffsetUnit":"%","delay":0,"direction":"RIGHT","effectIn":true},"createdOn":1675270763110},"e-83":{"id":"e-83","name":"","animationType":"preset","eventTypeId":"SCROLL_INTO_VIEW","action":{"id":"","actionTypeId":"SLIDE_EFFECT","instant":false,"config":{"actionListId":"slideInLeft","autoStopEventId":"e-84"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|25645b20-f4b3-2511-dd25-7208fbd09145","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|25645b20-f4b3-2511-dd25-7208fbd09145","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":20,"scrollOffsetUnit":"%","delay":0,"direction":"LEFT","effectIn":true},"createdOn":1675270778019},"e-85":{"id":"e-85","name":"","animationType":"preset","eventTypeId":"SCROLL_INTO_VIEW","action":{"id":"","actionTypeId":"GROW_BIG_EFFECT","instant":false,"config":{"actionListId":"growBigIn","autoStopEventId":"e-86"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|57bdc856-4cd7-97ad-784b-fd376d1095b9","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|57bdc856-4cd7-97ad-784b-fd376d1095b9","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":0,"scrollOffsetUnit":"%","delay":0,"direction":null,"effectIn":true},"createdOn":1675435152637},"e-87":{"id":"e-87","name":"","animationType":"preset","eventTypeId":"SCROLL_INTO_VIEW","action":{"id":"","actionTypeId":"SLIDE_EFFECT","instant":false,"config":{"actionListId":"slideInBottom","autoStopEventId":"e-88"}},"mediaQueries":["main","medium","small","tiny"],"target":{"selector":".f-team-card-small","originalId":"62e11a5d52c9ff35c48b331c|049034c0-eec0-ffee-560d-b2446808b437","appliesTo":"CLASS"},"targets":[{"selector":".f-team-card-small","originalId":"62e11a5d52c9ff35c48b331c|049034c0-eec0-ffee-560d-b2446808b437","appliesTo":"CLASS"}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":15,"scrollOffsetUnit":"%","delay":0,"direction":"BOTTOM","effectIn":true},"createdOn":1675171234969},"e-89":{"id":"e-89","name":"","animationType":"preset","eventTypeId":"SCROLL_INTO_VIEW","action":{"id":"","actionTypeId":"FADE_EFFECT","instant":false,"config":{"actionListId":"fadeIn","autoStopEventId":"e-90"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|7de2dffa-48ce-47c8-fdf6-5608e6d19514","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|7de2dffa-48ce-47c8-fdf6-5608e6d19514","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":15,"scrollOffsetUnit":"%","delay":300,"direction":null,"effectIn":true},"createdOn":1678206732880},"e-91":{"id":"e-91","name":"","animationType":"preset","eventTypeId":"SCROLL_INTO_VIEW","action":{"id":"","actionTypeId":"FADE_EFFECT","instant":false,"config":{"actionListId":"fadeIn","autoStopEventId":"e-92"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|d0507aa0-ffb7-2fbe-1544-4f1ef30e9cc0","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|d0507aa0-ffb7-2fbe-1544-4f1ef30e9cc0","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":15,"scrollOffsetUnit":"%","delay":300,"direction":null,"effectIn":true},"createdOn":1678206750983},"e-93":{"id":"e-93","name":"","animationType":"preset","eventTypeId":"SCROLL_INTO_VIEW","action":{"id":"","actionTypeId":"FADE_EFFECT","instant":false,"config":{"actionListId":"fadeIn","autoStopEventId":"e-94"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"62e11a5d52c9ff35c48b331c|b2ca0bd1-307a-fdf8-f0ba-4095915f4811","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"62e11a5d52c9ff35c48b331c|b2ca0bd1-307a-fdf8-f0ba-4095915f4811","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":15,"scrollOffsetUnit":"%","delay":300,"direction":null,"effectIn":true},"createdOn":1678206765319}},"actionLists":{"a-12":{"id":"a-12","title":"Card Flip IN","actionItemGroups":[{"actionItems":[{"id":"a-12-n","actionTypeId":"TRANSFORM_ROTATE","config":{"delay":0,"easing":"easeIn","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".c-card-front","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc193d"]},"yValue":0,"xUnit":"DEG","yUnit":"DEG","zUnit":"DEG"}},{"id":"a-12-n-2","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".c-card-front","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc193d"]},"value":"flex"}},{"id":"a-12-n-3","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".c-card-back","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1955"]},"value":"none"}},{"id":"a-12-n-4","actionTypeId":"TRANSFORM_ROTATE","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".c-card-back","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1955"]},"yValue":-90,"xUnit":"DEG","yUnit":"DEG","zUnit":"DEG"}}]},{"actionItems":[{"id":"a-12-n-5","actionTypeId":"TRANSFORM_ROTATE","config":{"delay":0,"easing":"easeIn","duration":250,"target":{"useEventTarget":"CHILDREN","selector":".c-card-front","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc193d"]},"yValue":90,"xUnit":"DEG","yUnit":"DEG","zUnit":"DEG"}}]},{"actionItems":[{"id":"a-12-n-6","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".c-card-front","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc193d"]},"value":"none"}},{"id":"a-12-n-7","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".c-card-back","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1955"]},"value":"flex"}}]},{"actionItems":[{"id":"a-12-n-8","actionTypeId":"TRANSFORM_ROTATE","config":{"delay":0,"easing":"easeOut","duration":250,"target":{"useEventTarget":"CHILDREN","selector":".c-card-back","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1955"]},"yValue":0,"xUnit":"DEG","yUnit":"DEG","zUnit":"DEG"}}]}],"useFirstGroupAsInitialState":true,"createdOn":1604560284744},"a-13":{"id":"a-13","title":"Card Flip OUT","actionItemGroups":[{"actionItems":[{"id":"a-13-n","actionTypeId":"TRANSFORM_ROTATE","config":{"delay":0,"easing":"easeIn","duration":250,"target":{"useEventTarget":"CHILDREN","selector":".c-card-back","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1955"]},"yValue":-90,"xUnit":"DEG","yUnit":"DEG","zUnit":"DEG"}}]},{"actionItems":[{"id":"a-13-n-2","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".c-card-front","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc193d"]},"value":"flex"}},{"id":"a-13-n-3","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"CHILDREN","selector":".c-card-back","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1955"]},"value":"none"}}]},{"actionItems":[{"id":"a-13-n-4","actionTypeId":"TRANSFORM_ROTATE","config":{"delay":0,"easing":"easeOut","duration":250,"target":{"useEventTarget":"CHILDREN","selector":".c-card-front","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc193d"]},"yValue":0,"xUnit":"DEG","yUnit":"DEG","zUnit":"DEG"}}]}],"useFirstGroupAsInitialState":false,"createdOn":1604560284744},"a-14":{"id":"a-14","title":"Card Btn IN","actionItemGroups":[{"actionItems":[{"id":"a-14-n","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"ease","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".c-card-btn-text.default","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1953","a1965062-1c95-1d0d-3cd4-1e6156dc1967"]},"yValue":0,"xUnit":"PX","yUnit":"%","zUnit":"PX"}},{"id":"a-14-n-2","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"ease","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".card-text.focus","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1942","a1965062-1c95-1d0d-3cd4-1e6156dc1960"]},"yValue":100,"xUnit":"PX","yUnit":"%","zUnit":"PX"}},{"id":"a-14-n-3","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"ease","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".c-card-btn-text.focus","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1953","a1965062-1c95-1d0d-3cd4-1e6156dc196d"]},"yValue":0,"xUnit":"PX","yUnit":"%","zUnit":"PX"}},{"id":"a-14-n-4","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".card-btn-focus-bg","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1944"]},"value":0,"unit":""}}]},{"actionItems":[{"id":"a-14-n-5","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"ease","duration":350,"target":{"useEventTarget":"CHILDREN","selector":".c-card-btn-text.default","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1953","a1965062-1c95-1d0d-3cd4-1e6156dc1967"]},"yValue":-100,"xUnit":"PX","yUnit":"%","zUnit":"PX"}},{"id":"a-14-n-6","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"ease","duration":350,"target":{"useEventTarget":"CHILDREN","selector":".c-card-btn-text.focus","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1953","a1965062-1c95-1d0d-3cd4-1e6156dc196d"]},"yValue":-100,"xUnit":"PX","yUnit":"%","zUnit":"PX"}},{"id":"a-14-n-7","actionTypeId":"TRANSFORM_MOVE","config":{"delay":150,"easing":"ease","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".card-text.focus","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1942","a1965062-1c95-1d0d-3cd4-1e6156dc1960"]},"yValue":0,"xUnit":"PX","yUnit":"%","zUnit":"PX"}},{"id":"a-14-n-8","actionTypeId":"STYLE_OPACITY","config":{"delay":300,"easing":"ease","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".card-btn-focus-bg","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1944"]},"value":1,"unit":""}}]}],"useFirstGroupAsInitialState":true,"createdOn":1604559193383},"a-15":{"id":"a-15","title":"Card Btn OUT","actionItemGroups":[{"actionItems":[{"id":"a-15-n","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"ease","duration":350,"target":{"useEventTarget":"CHILDREN","selector":".c-card-btn-text.default","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1953","a1965062-1c95-1d0d-3cd4-1e6156dc1967"]},"yValue":0,"xUnit":"PX","yUnit":"%","zUnit":"PX"}},{"id":"a-15-n-2","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"ease","duration":350,"target":{"useEventTarget":"CHILDREN","selector":".c-card-btn-text.focus","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1953","a1965062-1c95-1d0d-3cd4-1e6156dc196d"]},"yValue":0,"xUnit":"PX","yUnit":"%","zUnit":"PX"}},{"id":"a-15-n-3","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"ease","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".card-btn-focus-bg","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1944"]},"value":0,"unit":""}},{"id":"a-15-n-4","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"ease","duration":500,"target":{"useEventTarget":"CHILDREN","selector":".card-text.focus","selectorGuids":["a1965062-1c95-1d0d-3cd4-1e6156dc1942","a1965062-1c95-1d0d-3cd4-1e6156dc1960"]},"yValue":100,"xUnit":"PX","yUnit":"%","zUnit":"PX"}}]}],"useFirstGroupAsInitialState":false,"createdOn":1604559193383},"a-16":{"id":"a-16","title":"Video Unmute Click","actionItemGroups":[{"actionItems":[{"id":"a-16-n","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"","duration":500,"target":{"selector":".vimdeo-player-overlay","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08d5"]},"value":1,"unit":""}},{"id":"a-16-n-2","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"","duration":500,"target":{"selector":".vimeo-embed","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08de"]},"xValue":1.2,"yValue":1.2,"locked":true}},{"id":"a-16-n-3","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"","duration":500,"target":{"selector":".video-unmute-button","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08d7"]},"value":1,"unit":""}},{"id":"a-16-n-4","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"","duration":500,"target":{"selector":".video-unmute-button","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08d7"]},"yValue":0,"xUnit":"PX","yUnit":"em","zUnit":"PX"}},{"id":"a-16-n-5","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"SIBLINGS","selector":".video-play-pause-toggle","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08d0"]},"value":"none"}},{"id":"a-16-n-6","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":"SIBLINGS","selector":".video-play-pause-toggle","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08d0"]},"yValue":1.5,"xUnit":"PX","yUnit":"em","zUnit":"PX"}},{"id":"a-16-n-7","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":"SIBLINGS","selector":".video-play-pause-toggle","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08d0"]},"value":0,"unit":""}},{"id":"a-16-n-8","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"selector":".video-play-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08e0"]},"value":"none"}},{"id":"a-16-n-9","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"","duration":500,"target":{"selector":".video-play-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08e0"]},"value":0,"unit":""}},{"id":"a-16-n-10","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"selector":".video-pause-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08ce"]},"value":"flex"}},{"id":"a-16-n-11","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"","duration":500,"target":{"selector":".video-pause-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08ce"]},"value":1,"unit":""}}]},{"actionItems":[{"id":"a-16-n-12","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"ease","duration":500,"target":{"selector":".vimdeo-player-overlay","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08d5"]},"value":0,"unit":""}},{"id":"a-16-n-13","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"ease","duration":500,"target":{"selector":".vimeo-embed","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08de"]},"xValue":1,"yValue":1,"locked":true}},{"id":"a-16-n-14","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"outQuart","duration":500,"target":{"selector":".video-unmute-button","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08d7"]},"yValue":1.5,"xUnit":"PX","yUnit":"em","zUnit":"PX"}},{"id":"a-16-n-15","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"ease","duration":500,"target":{"selector":".video-unmute-button","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08d7"]},"value":0,"unit":""}},{"id":"a-16-n-16","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"SIBLINGS","selector":".video-play-pause-toggle","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08d0"]},"value":"block"}},{"id":"a-16-n-17","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"ease","duration":500,"target":{"useEventTarget":"SIBLINGS","selector":".video-play-pause-toggle","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08d0"]},"value":1,"unit":""}},{"id":"a-16-n-18","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"outQuart","duration":500,"target":{"useEventTarget":"SIBLINGS","selector":".video-play-pause-toggle","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08d0"]},"yValue":0,"xUnit":"PX","yUnit":"em","zUnit":"PX"}}]}],"useFirstGroupAsInitialState":true,"createdOn":1663590911426},"a-17":{"id":"a-17","title":"Magnetic Element","continuousParameterGroups":[{"id":"a-17-p","type":"MOUSE_X","parameterLabel":"Mouse X","continuousActionGroups":[{"keyframe":0,"actionItems":[{"id":"a-17-n","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":true,"id":"62e11a5d52c9ff35c48b331c|dcfb162f-14ad-fe1d-9925-7370b9cdb8e9"},"xValue":-1.6,"xUnit":"em","yUnit":"PX","zUnit":"PX"}}]},{"keyframe":100,"actionItems":[{"id":"a-17-n-2","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":true,"id":"62e11a5d52c9ff35c48b331c|dcfb162f-14ad-fe1d-9925-7370b9cdb8e9"},"xValue":1.6,"xUnit":"em","yUnit":"PX","zUnit":"PX"}}]}]},{"id":"a-17-p-2","type":"MOUSE_Y","parameterLabel":"Mouse Y","continuousActionGroups":[{"keyframe":0,"actionItems":[{"id":"a-17-n-3","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":true,"id":"62e11a5d52c9ff35c48b331c|dcfb162f-14ad-fe1d-9925-7370b9cdb8e9"},"yValue":-1.6,"xUnit":"PX","yUnit":"em","zUnit":"PX"}}]},{"keyframe":100,"actionItems":[{"id":"a-17-n-4","actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":true,"id":"62e11a5d52c9ff35c48b331c|dcfb162f-14ad-fe1d-9925-7370b9cdb8e9"},"yValue":1.6,"xUnit":"PX","yUnit":"em","zUnit":"PX"}}]}]}],"createdOn":1639751982795},"a-18":{"id":"a-18","title":"Video Play Click","actionItemGroups":[{"actionItems":[{"id":"a-18-n","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"SIBLINGS","selector":".video-pause-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08ce"]},"value":"flex"}},{"id":"a-18-n-2","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"outQuart","duration":300,"target":{"useEventTarget":"SIBLINGS","selector":".video-pause-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08ce"]},"xValue":1,"yValue":1,"locked":true}},{"id":"a-18-n-3","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"ease","duration":300,"target":{"useEventTarget":"SIBLINGS","selector":".video-pause-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08ce"]},"value":1,"unit":""}},{"id":"a-18-n-4","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"ease","duration":300,"target":{"selector":".video-play-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08e0"]},"value":0,"unit":""}},{"id":"a-18-n-5","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"outQuart","duration":300,"target":{"selector":".video-play-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08e0"]},"xValue":0.5,"yValue":0.5,"locked":true}},{"id":"a-18-n-6","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"outQuart","duration":500,"target":{"selector":".vimeo-embed","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08de"]},"xValue":1,"yValue":1,"locked":true}},{"id":"a-18-n-7","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"ease","duration":500,"target":{"selector":".vimdeo-player-overlay","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08d5"]},"value":0,"unit":""}}]},{"actionItems":[{"id":"a-18-n-8","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"selector":".video-play-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08e0"]},"value":"none"}}]}],"useFirstGroupAsInitialState":false,"createdOn":1663591298713},"a-19":{"id":"a-19","title":"Video Pause Click","actionItemGroups":[{"actionItems":[{"id":"a-19-n","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"SIBLINGS","selector":".video-play-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08e0"]},"value":"none"}},{"id":"a-19-n-2","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":"SIBLINGS","selector":".video-play-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08e0"]},"xValue":0.5,"yValue":0.5,"locked":true}},{"id":"a-19-n-3","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"","duration":500,"target":{"useEventTarget":"SIBLINGS","selector":".video-play-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08e0"]},"value":0,"unit":""}},{"id":"a-19-n-4","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"selector":".video-pause-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08ce"]},"value":"flex"}},{"id":"a-19-n-5","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"","duration":500,"target":{"selector":".video-pause-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08ce"]},"value":1,"unit":""}},{"id":"a-19-n-6","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"outQuart","duration":500,"target":{"selector":".video-pause-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08ce"]},"xValue":1,"yValue":1,"locked":true}}]},{"actionItems":[{"id":"a-19-n-7","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"SIBLINGS","selector":".video-play-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08e0"]},"value":"flex"}},{"id":"a-19-n-8","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"ease","duration":300,"target":{"useEventTarget":"SIBLINGS","selector":".video-play-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08e0"]},"value":1,"unit":""}},{"id":"a-19-n-9","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"outQuart","duration":300,"target":{"useEventTarget":"SIBLINGS","selector":".video-play-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08e0"]},"xValue":1,"yValue":1,"locked":true}},{"id":"a-19-n-10","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"ease","duration":300,"target":{"selector":".video-pause-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08ce"]},"value":0,"unit":""}},{"id":"a-19-n-11","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"outQuart","duration":300,"target":{"selector":".video-pause-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08ce"]},"xValue":0.5,"yValue":0.5,"locked":true}},{"id":"a-19-n-12","actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"outQuart","duration":500,"target":{"selector":".vimeo-embed","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08de"]},"xValue":1.15,"yValue":1.15,"locked":true}},{"id":"a-19-n-13","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"ease","duration":500,"target":{"selector":".vimdeo-player-overlay","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08d5"]},"value":1,"unit":""}}]},{"actionItems":[{"id":"a-19-n-14","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"selector":".video-pause-wrapper","selectorGuids":["a8b6f65b-cf25-22b8-199d-4ec17c0b08ce"]},"value":"none"}}]}],"useFirstGroupAsInitialState":true,"createdOn":1663591298713},"rubberBand":{"id":"rubberBand","actionItemGroups":[{"actionItems":[{"actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"outQuart","duration":250,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":1.25,"yValue":0.7500000000000001}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"outElastic","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":1,"yValue":1}}]}]},"flipInLeft":{"id":"flipInLeft","useFirstGroupAsInitialState":true,"actionItemGroups":[{"actionItems":[{"actionTypeId":"STYLE_OPACITY","config":{"duration":0,"delay":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":0}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_ROTATE","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":0,"yValue":-90,"zValue":0,"xUnit":"DEG","yUnit":"DEG","zUnit":"DEG"}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_ROTATE","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":0,"yValue":0,"zValue":0,"xUnit":"DEG","yUnit":"DEG","zUnit":"DEG"}},{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":1}}]}]},"slideInBottom":{"id":"slideInBottom","useFirstGroupAsInitialState":true,"actionItemGroups":[{"actionItems":[{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":0}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":0,"yValue":100,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":0,"yValue":0,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}},{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":1}}]}]},"slideInRight":{"id":"slideInRight","useFirstGroupAsInitialState":true,"actionItemGroups":[{"actionItems":[{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":0}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":100,"yValue":0,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}}]},{"actionItems":[{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":1}},{"actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":0,"yValue":0,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}}]}]},"slideInLeft":{"id":"slideInLeft","useFirstGroupAsInitialState":true,"actionItemGroups":[{"actionItems":[{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":0}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":-100,"yValue":0,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}}]},{"actionItems":[{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":1}},{"actionTypeId":"TRANSFORM_MOVE","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":0,"yValue":0,"xUnit":"PX","yUnit":"PX","zUnit":"PX"}}]}]},"growBigIn":{"id":"growBigIn","useFirstGroupAsInitialState":true,"actionItemGroups":[{"actionItems":[{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":0}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":0,"yValue":0}}]},{"actionItems":[{"actionTypeId":"TRANSFORM_SCALE","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"xValue":1,"yValue":1}},{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":1}}]}]},"fadeIn":{"id":"fadeIn","useFirstGroupAsInitialState":true,"actionItemGroups":[{"actionItems":[{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"duration":0,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":0}}]},{"actionItems":[{"actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"outQuart","duration":1000,"target":{"id":"N/A","appliesTo":"TRIGGER_ELEMENT","useEventTarget":true},"value":1}}]}]}},"site":{"mediaQueries":[{"key":"main","min":992,"max":10000},{"key":"medium","min":768,"max":991},{"key":"small","min":480,"max":767},{"key":"tiny","min":0,"max":479}]}}
 );

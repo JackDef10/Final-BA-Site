@@ -1824,12 +1824,6 @@ textarea.w-select {
 .w-condition-invisible {
   display: none !important;
 }
-.wf-layout-layout {
-  display: grid !important;
-}
-.wf-layout-cell {
-  display: flex !important;
-}
 /* ---------------------------------- page switcher -----------------------------------------*/
 .page{
   display:block;
@@ -1842,3 +1836,4 @@ textarea.w-select {
 .pages .page.is-active{
   display:block;
 }
+
