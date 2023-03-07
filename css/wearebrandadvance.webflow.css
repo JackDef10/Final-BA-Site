@@ -369,6 +369,11 @@ a {
   padding-left: 60px;
 }
 
+.page.team {
+  display: none;
+  background-color: #111;
+}
+
 .topbar-divider {
   position: relative;
   z-index: 2;
@@ -2165,7 +2170,7 @@ a {
 
   .page.team {
     display: none;
-    background-color: #000;
+    background-color: #111;
   }
 
   .publisher-main {
@@ -2230,7 +2235,7 @@ a {
   }
 
   .slide {
-    background-color: #000;
+    background-color: #111;
   }
 
   .f-team-image-tall.main-image {
@@ -2743,6 +2748,18 @@ a {
     padding-bottom: 0px;
   }
 
+  .page.team {
+    display: none;
+  }
+
+  .right-arrow {
+    top: 2%;
+  }
+
+  .left-arrow {
+    top: 2%;
+  }
+
   .location-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3092,6 +3109,10 @@ a {
     padding-left: 10px;
   }
 
+  .page.team {
+    display: none;
+  }
+
   .topbar-divider {
     height: auto;
     padding: 10px;
@@ -3169,6 +3190,14 @@ a {
   .icon-2 {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .right-arrow {
+    top: 1.5%;
+  }
+
+  .left-arrow {
+    top: 1.5%;
   }
 
   .c-card-front {
@@ -3261,6 +3290,10 @@ a {
   .f-paragraph-large-2 {
     font-size: 14px;
     line-height: 24px;
+  }
+
+  .logo-div {
+    width: 175px;
   }
 
   .coinamp {
